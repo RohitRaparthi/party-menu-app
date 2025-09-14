@@ -36,3 +36,257 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.app-container {
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  margin-left: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 95vw;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.tab {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  cursor: pointer;
+  background: #f3f3f3;
+  position: relative;
+}
+
+.tab.active {
+  background: #ffb84d;
+  border-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+}
+
+.tab .badge {
+  background: #ff3333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+.dishlist{
+  overflow-y: scroll;
+}
+
+/* Category Section */
+.category {
+  margin: 12px;
+  border: 2px solid #ff66cc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.category-header {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Dish List */
+.dish-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dish-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.dish-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.dish-desc {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.dish-ingredient {
+  color: #ff6600;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dish-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.dish-actions img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+button.add-btn,
+button.remove-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+}
+
+button.add-btn {
+  background: #e6ffe6;
+  color: #006600;
+}
+
+button.remove-btn {
+  background: #ffe6e6;
+  color: #cc0000;
+}
+
+/* Bottom Summary Bar */
+.summary-bar {
+  margin-top: auto;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-text {
+  font-weight: bold;
+}
+
+.summary-bar button {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.summary-bar button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Modal (Ingredients) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dishnames{
+  display: flex;
+}
+.dish-type{
+  margin-left: 20px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.red{
+  border: 1px red solid;
+  color: red;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.green{
+  border: 1px green solid;
+  color: green;
+  padding: 5px;
+  border-radius: 2px;
+}
