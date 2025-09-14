@@ -1,4 +1,4 @@
-# 🍽️ Party Menu Selection App
+# 🍽️ Party Menu App
 
 A ReactJS web application that allows users to browse dishes, filter them by category, search, and select items for a party.  
 Users can also view detailed ingredients in a modal.
